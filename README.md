@@ -3,7 +3,7 @@ Maintenez et documentez un système de stockage des données sécurisé et perfo
 
 ## Fonctionnement du script d'intégration des données :
 Dans un premier temps on vient récupérer les informations de connexion à la base de données :
-- > mongo = MongoClient('mongodb://root:a1B2c3D4e5@localhost:27019/')
+- > mongo = MongoClient('mongodb://root:a1B2c3D4e5@db:27017/')
 - > db = mongo['local']
 - > collection = db['data']
 
