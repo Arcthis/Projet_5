@@ -1,19 +1,6 @@
 # Projet_5
 Maintenez et documentez un système de stockage des données sécurisé et performant
 
-## Contexte :
-
-Sous la supervision de mon chef de projet Boris, je me suis penché sur la migration de données depuis un dataset CSV vers une instance MongoDB sous Docker.
-Pour ce faire, il faut écrire un script d’intégration de données et expliquer le processus dans un README.md qui sera sur un dépôt GitHub.
-Les différentes étapes vont être :
-
-- Schéma de l’architecture souhaitée
-- Création du dépôt GitHub et clonage de celui-ci en local
-- Construction du docker-compose.yml et du Dockerfile
-- Ecriture du script d’intégration
-- Connexion de la base de données sur Compass
-- Test du processus en suivant la documentation du README
-
 ## Lancement du script d'intégration des données :
 
 Tout d'abord, il faut lancer le conteneur, si jamais c'est la première fois, alors il faut lancer cette commande :
