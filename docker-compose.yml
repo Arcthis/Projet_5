@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  db:
+    container_name: mongodb_container
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: a1B2c3D4e5
+    ports:
+      - "27019:27017"
+    networks:
+      mongodb_network:
+        ipv4_address: 172.82.0.8
+
+  python_app:
+    container_name: python_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      mongodb_network:
+        ipv4_address: 172.82.0.9
+    volumes:
+      - ./scripts:/scripts
+      - ./Integration_donnees/dataset:/csv
+
+networks:
+  mongodb_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.82.0.0/24
