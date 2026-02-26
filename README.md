@@ -26,7 +26,7 @@ Si ce n'est pas la première fois, alors il faut lancer cette commande :
 
 Ensuite, il faut rentrer dans le conteneur, pour ce faire, il faut rentrer cette commande :
 
-> docker exec -it <nom du conteneur> bash
+> docker exec -it "nom du conteneur" bash
 
 Une fois rentrer dedans, il faut se rendre dans le dossier script :
 
@@ -34,7 +34,7 @@ Une fois rentrer dedans, il faut se rendre dans le dossier script :
 
 Et lancer le script :
 
-> python <nom du script>
+> python "nom du script"
 
 ## Fonctionnement du script d'intégration des données :
 
